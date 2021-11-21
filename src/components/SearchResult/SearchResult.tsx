@@ -13,7 +13,7 @@ function SearchResult({ name, poster_path }: SearchResultProps): JSX.Element {
         <h3>{name}</h3>
       </div>
     );
-  } else return <div></div>;
+  } else return <p>Search</p>;
 }
 
 export default SearchResult;
