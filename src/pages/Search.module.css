@@ -1,0 +1,5 @@
+.results {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 50% 50%;
+}
