@@ -4,14 +4,14 @@
   "scripts": {
     "dev-client": "vite",
     "dev-server": "ts-node-dev --project server/tsconfig.json server/index.ts",
-    "build": "npm run build-client && npm run build-server",
+    "dev-storybook": "start-storybook -p 6006",
+    "build": "npm run build-client && npm run build-server && npm run build-storybook",
     "build-client": "tsc && vite build",
     "build-server": "tsc --project server/tsconfig.json",
+    "build-storybook": "build-storybook -o dist/storybook",
     "serve": "vite preview",
     "lint": "stylelint \"**/*.css\" && eslint . && prettier . --check",
     "prepare": "husky install",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
     "start": "node dist/index.js"
   },
   "dependencies": {

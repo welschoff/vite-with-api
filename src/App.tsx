@@ -10,10 +10,6 @@ function App() {
       setMessage(result.message);
     }
     doFetch();
-
-    // fetch('/api/hello')
-    //   .then((response) => response.json())
-    //   .then((result) => setMessage(result.message));
   }, []);
 
   return (
